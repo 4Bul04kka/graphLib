@@ -1,8 +1,7 @@
 package sc.vsu;
 
-import java.util.ArrayList;
-import java.util.NoSuchElementException;
-import java.util.Random;
+import java.util.*;
+import java.util.function.Consumer;
 
 public class SimpleGraph {
 
@@ -119,4 +118,5 @@ public class SimpleGraph {
         }
         return result += "]}";
     }
+
 }

@@ -100,23 +100,14 @@ public class SimpleDigraph {
         return result;
     }
 
-    private int getNodeIndex(SimpleGraph.Node v){
+    private int getNodeIndex(SimpleDigraph.Node v){
         for (int i = 0; i < nodes.size(); i++) {
             if(v.equals(nodes.get(i)))
                 return i;
         }
         return -1;
     }
-
-}
-
-
-
-
-
-
-
-    /*public String toJSON(){
+    public String toJSON(){
         String result = "{\"nodes\":[\n";
         for (int i = 0; i < nodes.size(); i++) {
             if(i != nodes.size() - 1)
@@ -130,4 +121,6 @@ public class SimpleDigraph {
             else result += "{\"source\": \"" + getNodeIndex(edges.get(i).source) +  "\", \"target\": \"" + getNodeIndex(edges.get(i).target) + "\"}\n";
         }
         return result += "]}";
-    }*/
+    }
+
+}
